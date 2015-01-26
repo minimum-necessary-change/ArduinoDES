@@ -400,8 +400,12 @@ class DES
  * <li>3des Decyption</li>
  * <li>Padding check</li>
  * </ul><br />
+<<<<<<< HEAD
  * Using all function manually
  */
+=======
+ * Using all f
+>>>>>>> e53bc98cb67b34502d07045fb5500c73ba9d1ef7
  
  /**
  * @example DesedeCBC-easy.ino

@@ -27,4 +27,8 @@ int main(int argc, char** argv) {
 int calc_size(int size){
 	size = size + (8 - (size % 8)) - 1;
 	return size;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e53bc98cb67b34502d07045fb5500c73ba9d1ef7
