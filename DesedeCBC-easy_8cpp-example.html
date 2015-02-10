@@ -88,6 +88,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;DES.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;printf.h&quot;</span></div>
 <div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> calc_size(<span class="keywordtype">int</span> size);</div>
+<div class="line"></div>
 <div class="line"><a name="_a0"></a><a class="code" href="classDES.html">DES</a> des;</div>
 <div class="line"><span class="keywordtype">double</span> ms;</div>
 <div class="line"></div>
@@ -101,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  byte plaintext[] = <span class="stringliteral">&quot;0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890&quot;</span>;</div>
 <div class="line">  byte ciphertext[calc_size(<span class="keyword">sizeof</span>(plaintext))];</div>
 <div class="line">  byte plaintext_p[<span class="keyword">sizeof</span>(ciphertext)];</div>
-<div class="line">  des.<a name="a3"></a><a class="code" href="classDES.html#a459bfbc8e3b141ad1dd5369d91c1b43e">do_3des_encrypt</a>(plaintext,<span class="keyword">sizeof</span>(plaintext),ciphertext,<span class="stringliteral">&quot;012345677654321001234567\0&quot;</span>);</div>
+<div class="line">  des.<a name="a3"></a><a class="code" href="classDES.html#a9928173597098e3f301d16240055c6f3">do_3des_encrypt</a>(plaintext,<span class="keyword">sizeof</span>(plaintext),ciphertext,<span class="stringliteral">&quot;012345677654321001234567\0&quot;</span>);</div>
 <div class="line">  printf(<span class="stringliteral">&quot; Encryption took %f ms\n&quot;</span>,(des.<a class="code" href="classDES.html#a7d91a2beb2c2fecc6d62c3e3c17bcef3">millis</a>() - ms));</div>
 <div class="line">  ms = des.<a class="code" href="classDES.html#a7d91a2beb2c2fecc6d62c3e3c17bcef3">millis</a>();</div>
 <div class="line">  des.<a name="a4"></a><a class="code" href="classDES.html#aece80c43d1c34683e7ba9ced60238d7b">do_3des_decrypt</a>(ciphertext,<span class="keyword">sizeof</span>(ciphertext),plaintext_p,<span class="stringliteral">&quot;012345677654321001234567\0&quot;</span>, des.<a name="a5"></a><a class="code" href="classDES.html#ac9164aecb2fb512e6efef8d0ee73e701">get_IV_int</a>());</div>
@@ -116,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 25 2015 22:40:04 for DES and 3DES Encryption Library for Arduino and Raspberry Pi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 10 2015 16:12:57 for DES and 3DES Encryption Library for Arduino and Raspberry Pi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

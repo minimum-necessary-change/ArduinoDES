@@ -156,8 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae1abdb8b8cbf20b8b56e0367b4070a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bf019f660b21162bd12f26bc23ae8c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a5bf019f660b21162bd12f26bc23ae8c8">printArray</a> (byte output[], int sizel)</td></tr>
 <tr class="separator:a5bf019f660b21162bd12f26bc23ae8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459bfbc8e3b141ad1dd5369d91c1b43e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a459bfbc8e3b141ad1dd5369d91c1b43e">do_3des_encrypt</a> (byte *plain, int size_p, byte *cipher, const void *<a class="el" href="classDES.html#aa5bc8898a2d746d9b23a30c82cb1034a">key</a>)</td></tr>
-<tr class="separator:a459bfbc8e3b141ad1dd5369d91c1b43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9928173597098e3f301d16240055c6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a9928173597098e3f301d16240055c6f3">do_3des_encrypt</a> (byte *plain, int size_p, byte *cipher, const void *<a class="el" href="classDES.html#aa5bc8898a2d746d9b23a30c82cb1034a">key</a>, bool inc=false)</td></tr>
+<tr class="separator:a9928173597098e3f301d16240055c6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece80c43d1c34683e7ba9ced60238d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#aece80c43d1c34683e7ba9ced60238d7b">do_3des_decrypt</a> (byte *cipher, int size_c, byte *plain, const void *<a class="el" href="classDES.html#aa5bc8898a2d746d9b23a30c82cb1034a">key</a>, unsigned long long int ivl)</td></tr>
 <tr class="separator:aece80c43d1c34683e7ba9ced60238d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d91a2beb2c2fecc6d62c3e3c17bcef3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a7d91a2beb2c2fecc6d62c3e3c17bcef3">millis</a> ()</td></tr>
@@ -194,8 +194,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a698fdf5a58eb216d49ab92cf9f653822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948e569adc8297a832ab02dad364112c"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a948e569adc8297a832ab02dad364112c">tv</a></td></tr>
 <tr class="separator:a948e569adc8297a832ab02dad364112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af91a1b2f18572f2e73bf859dceadb3e7"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#af91a1b2f18572f2e73bf859dceadb3e7">arr_pad</a> [7] = { 0x01,0x02,0x03,0x04,0x05,0x06,0x07 }</td></tr>
-<tr class="separator:af91a1b2f18572f2e73bf859dceadb3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a1ef6a8e871c7f9ea98444144a0f5f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDES.html#a28a1ef6a8e871c7f9ea98444144a0f5f">arr_pad</a> [7]</td></tr>
+<tr class="separator:a28a1ef6a8e871c7f9ea98444144a0f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="DesedeCBC-easy_8cpp-example.html#_a0">DesedeCBC-easy.cpp</a>, <a class="el" href="DesedeCBCexample_8ino-example.html#_a0">DesedeCBCexample.ino</a>, <a class="el" href="DESexample_8cpp-example.html#_a0">DESexample.cpp</a>, and <a class="el" href="DESexample_8ino-example.html#_a0">DESexample.ino</a>.</dd>
@@ -853,7 +853,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a459bfbc8e3b141ad1dd5369d91c1b43e"></a>
+<a class="anchor" id="a9928173597098e3f301d16240055c6f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -879,7 +879,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inc</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -895,6 +901,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">size_p</td><td>size of the plaintext </td></tr>
     <tr><td class="paramname">*cipher</td><td>pointer to the ciphertext </td></tr>
     <tr><td class="paramname">*key</td><td>pointer to the key that will be used. </td></tr>
+    <tr><td class="paramname">inc</td><td>optional parameter to automaticaly increase IV </td></tr>
   </table>
   </dd>
 </dl>
@@ -1362,7 +1369,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af91a1b2f18572f2e73bf859dceadb3e7"></a>
+<a class="anchor" id="a28a1ef6a8e871c7f9ea98444144a0f5f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1370,7 +1377,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">byte DES::arr_pad = { 0x01,0x02,0x03,0x04,0x05,0x06,0x07 }</td>
+          <td class="memname">byte DES::arr_pad[7]</td>
         </tr>
       </table>
   </td>
@@ -1379,15 +1386,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>holds the hexadecimal padding values on linux</p>
-<p>holds the hexadecimal padding values </p>
+<p>holds the hexadecimal padding values, initialisation in the constructor </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 25 2015 22:40:04 for DES and 3DES Encryption Library for Arduino and Raspberry Pi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 10 2015 16:12:57 for DES and 3DES Encryption Library for Arduino and Raspberry Pi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

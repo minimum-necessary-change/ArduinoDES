@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['tdescbcdecipher',['tdesCbcDecipher',['../classDES.html#a7a8580f0b7c451dc2030b574679f6ccf',1,'DES']]],
-  ['tdescbcencipher',['tdesCbcEncipher',['../classDES.html#a32ded77fd781e97c6573a522578ef40a',1,'DES']]],
-  ['tripledecrypt',['tripleDecrypt',['../classDES.html#a04cc84ada81535c40e844bd044005dd5',1,'DES']]],
-  ['tripleencrypt',['tripleEncrypt',['../classDES.html#a4fa4f5cfdc32b85587d58ada9cabb78c',1,'DES']]],
-  ['tv',['tv',['../classDES.html#a948e569adc8297a832ab02dad364112c',1,'DES']]]
+  ['set_5fiv',['set_IV',['../classDES.html#a91da0416d634db888949d37ab2e4269e',1,'DES']]],
+  ['set_5fsize',['set_size',['../classDES.html#a054dd009a1b908ce51dc3259c7b5b199',1,'DES']]],
+  ['shiftkey',['shiftkey',['../classDES.html#a1b1ce070bb22dfae6a6c43debfba3f6d',1,'DES']]],
+  ['shiftkey_5finv',['shiftkey_inv',['../classDES.html#ad538ac9ba6cab3c7308e0cd792e36f19',1,'DES']]],
+  ['size',['size',['../classDES.html#a698fdf5a58eb216d49ab92cf9f653822',1,'DES']]],
+  ['splitin6bitwords',['splitin6bitwords',['../classDES.html#a78fbb25144874a6080f6d791a239d7f4',1,'DES']]],
+  ['substitute',['substitute',['../classDES.html#a4331ed85c62c33f03289fd9a76543c0f',1,'DES']]]
 ];
